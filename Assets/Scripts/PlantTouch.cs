@@ -119,7 +119,7 @@ public class PlantTouch : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         // Optional: check tags to restrict what can touch the plant
-        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Hand"))
+        if (collision.gameObject.CompareTag("Player")) //|| collision.gameObject.CompareTag("Hand"))
         {
             Touch();
         }
