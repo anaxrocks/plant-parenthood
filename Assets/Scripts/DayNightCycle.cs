@@ -160,12 +160,12 @@ public class DayNightCycle : MonoBehaviour
 
                 if (inDirectLight)
                 {
-                    plant.ReceiveSunlight(sunExposure * 100f); // Multiply by 100 to match percentage scale
+                    plant.ReceiveSunlight(sunExposure * 10f); // Multiply by 100 to match percentage scale
                 }
                 else
                 {
                     // Plants in shade get some ambient light
-                    plant.ReceiveSunlight(sunExposure * 20f); // 20% of direct sunlight
+                    plant.ReceiveSunlight(-0.005f); // 2% of direct sunlight
                 }
             }
         }
